@@ -14,13 +14,8 @@
  contact
 
 # Home
- background image of vector stars (Keep 2d) (https://www.vecteezy.com/free-vector/space)
+ background image of vector stars 
  Neon light features throughout
  name and small about for header
  slide for project previews
-
-# Our System
- Page to show off just some progrmming skills
- overhead look of solar system in a vector art style. 
- Hover over planets to get details about them
  

@@ -13,8 +13,10 @@
 
         <!--Fonts-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+        
         <!--Style Sheets-->
+        <link rel="stylesheet" href="/css/nav.css">
+        <link rel="stylesheet" href="/css/mediaNav.css">
         <link rel="stylesheet" href="/css/index.css">
         <link rel="stylesheet" href="/css/mediaIndex.css">
 
@@ -25,13 +27,12 @@
         <![endif]-->
 
         <nav>
-            
             <ul>
-                <h3>Ben MacIntyre</h3>
+                <h3>My Portfolio</h3>
                 <li class="link"><a href="/index.html">HOME</a></li>
-                <li class="link"><a href="">SOL</a></li>
                 <li class="link"><a href="">PROJECTS</a></li>
                 <li class="link"><a href="">ABOUT</a></li>
+                <li class="link"><a href="">CONTACT</a></li>
                 <div class="toggle">
                     <i class="fa-solid fa-bars-staggered" style="color: #ffffff;"></i>
                 </div>
@@ -39,29 +40,50 @@
         </nav>
         
         <div class="mobileNav open">
-            <ul id="navMobile">
-                <li class="link"><a href="/index.html">HOME</a></li>
-                <li class="link"><a href="">SOL</a></li>
+            <ul id="mobileNav">
+                <li class="link"><hr><a href="/index.html">HOME</a></li>
                 <li class="link"><a href="">PROJECTS</a></li>
                 <li class="link"><a href="">ABOUT</a></li>
+                <li class="link"><a href="">CONTACT</a><hr></li>
+                
             </ul>
         </div>
         
-        
         <header>
-
+            <div class="center">
+                <div id="text">
+                    <h3>Hello!</h3>
+                    <h1>I'm Ben MacIntyre</h1>
+                    
+                    <h6>I am a Web Developer and I believe I can be an asset to you.</h6>
+                    <a href="" id="contact_btn">CONTACT ME</a>
+                </div>
+                <div class="right_img"><img src="/imgs/earth_right.png" alt=""></div>
+                <div class="bottom_img"><img src="/imgs/earth_bottom.png" alt=""></div>
+            </div>
         </header>
         
-        <section id="about_me">
-            <div class="clear"></div>
+        <section id="about_me" class="center">
+            <div id="top">
+                <div id="left" class="clear">
+                    <div class="content top"></div>
+
+                </div>
+                <div id="right" class="clear">
+                    <div class="content top"></div>
+                </div>
+            </div>
+            <div id="bottom" class="clear">
+                <div class="content"></div>
+            </div>
 
         </section>
 
-        <section id="projects">
+        <section id="projects" class="center">
 
         </section>
 
-        <section id="contact">
+        <section id="contact" class="center clear">
             <div class="clear"></div>
 
         </section>

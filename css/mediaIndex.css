@@ -1,28 +1,58 @@
 @charset "utf-8";
-@import "root";
+@import "base.css";
 
-@media(max-width: 900px) {
-    nav ul {
-        scale: .9;
+@media (max-width: 900px) {
+    header #text {
+    width: auto;
     }
 }
 
-@media(max-width: 600px) {
-    nav .link {
+@media (max-width: 720px) {
+    header .center {
+        display: block;
+    }
+
+    header #text {
+        min-width: 0;
+        flex: 100%;
+    }
+
+    div.right_img {
         display: none;
     }
-    nav .toggle {
+
+    div#top {
+        flex: none;
+    }
+}
+
+@media (max-width: 650px) {
+
+    header {
+        height: 420px;
+    }
+
+    header #text {
+        text-align: center;
+        overflow: hidden;
+        height: 50%;
+    }
+
+    header #text h1 {
+        font-size: 30px;
+    }
+    
+    header #text > * {
+        font-size: 18px;
+        margin-top: 0;
+
+    }
+
+    div.bottom_img img{
         display: block;
     }
 
-    nav ul {
-        justify-content: center;
-        justify-content: space-between;
-    }
-
-    .mobileNav{
-        display: block;
-        left: 2rem;
-        width: unset;
+    div.bottom_img img {
+        width: 100%;
     }
 }
