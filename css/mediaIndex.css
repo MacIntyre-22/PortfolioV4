@@ -5,6 +5,63 @@
     header #text {
     width: auto;
     }
+
+    div#top {
+        flex-direction: column;
+        margin: 50px;
+        gap: 50px;
+    }
+
+    div#right {
+        margin: 0;
+    }
+
+    div#left {
+        margin: 0;
+    }
+
+    section#projects {
+        height: 100%;
+    }
+
+    div#slide_window {
+        position: relative;
+        padding: 40px;
+    }
+
+    #projects div#right {
+        position: static;
+        margin: auto;
+        width: auto;
+        height: 30%;
+        text-align: center;
+    }
+
+    #projects div#left {
+        position: static;
+        height: 60%;
+        border-left-style: none;
+        border-bottom-style: solid;
+        margin: auto;
+        display: block;
+    }
+
+    #projects div#left ul {
+        display: block;
+        width: 100%;
+        animation: slide2 15s ease-in-out infinite;
+        animation-direction: alternate;
+    }
+
+    .project {
+        margin: 50px auto;
+        width: auto;
+        height: auto;
+    }
+
+    .project #content {
+        width: auto;
+    }
 }
 
 @media (max-width: 720px) {
@@ -21,9 +78,6 @@
         display: none;
     }
 
-    div#top {
-        flex: none;
-    }
 }
 
 @media (max-width: 650px) {
@@ -54,5 +108,23 @@
 
     div.bottom_img img {
         width: 100%;
+    }
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-72%);
     }
 }

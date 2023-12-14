@@ -3,7 +3,7 @@
 
 /*Header*/
 header {
-    background: linear-gradient(to right, rgb(9, 9, 9), rgb(15, 15, 15));
+    background: linear-gradient(to right, rgb(7, 7, 7), rgb(10,10,10));
     box-shadow: 0px 5px 10px 10px var(--shadow);
     height: 550px;
     margin-top: 80px;
@@ -16,10 +16,10 @@ header #text {
     padding: 70px 30px 30px 30px;
     width: 70%;
     min-width: 565px;
-    height: 460px;
+    height: 430px;
     box-shadow: 0px 5px 10px 10px var(--shadow);
     font-family: 'Space Grotesk', sans-serif;
-    flex: 60%;
+    flex: 80%;
     z-index: 10;
 }
 
@@ -35,31 +35,37 @@ header #text > * {
 }
 
 #contact_btn {
+    transition: 1s;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     text-decoration: none;
     color: white;
+    text-shadow: 0px 0px 10px white;
+}
+
+#contact_btn:hover {
+    transition: 1s;
+    font-size: 27px;
     text-shadow: 0px 0px 30px white;
 }
 
 header .center {
     display: flex;
-    align-items: center;
 }
 
 .right_img {
-    flex: 40%;
+    flex: 20%;
     z-index: 1;
 }
 
 .right_img img{
     transition: 1s;
-    height: 560px;
+    height: 500px;
 }
 
 .right_img img:hover {
     transition: 2s;
-    scale: 1.1;
+    scale: 1.05;
 }
 
 div.bottom_img img{
@@ -71,13 +77,13 @@ div.bottom_img img{
 #about_me {
     margin-top: 150px;
     margin-bottom: 150px;
-    height: 1000px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 div#top {
     display: flex;
     height: 50%;
-    
+    gap: 50px;
 }
 
 div#bottom {
@@ -86,15 +92,13 @@ div#bottom {
     padding: 30px;
 }
 
-div#left {
+#about_me div#left {
     flex: 50%;
-    margin: 20px;
     padding: 30px;
 }
 
-div#right {
+#about_me div#right {
     flex: 50%;
-    margin: 20px;
     padding: 30px;
 }
 
@@ -107,3 +111,78 @@ div#right {
     border-color: rgba(255, 255, 255, 0.5);
 }
 
+/*Projects*/
+
+section#projects {
+    height: 700px;
+    background-image: radial-gradient(circle, rgb(56, 56, 56), var(--primary));
+}
+
+div#slide_window {
+    height: 700px;
+    max-width: 1400px;
+    position: relative;
+}
+
+#projects div#left {
+    width: 70%;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    overflow: hidden;
+    border-left-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+#projects div#left ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    animation: slide 15s ease-in-out infinite;
+    animation-direction: alternate;
+}
+
+#projects div#left ul li {
+    margin: 0 30px;
+}
+
+#projects div#right {
+    background-color: white;
+    color: var(--primary);
+    box-shadow: 0px 5px 10px 10px var(--shadow);
+    width: 330px;
+    height: 500px;
+    position: absolute;
+    top: 80px;
+    right: 5%;
+    padding: 20px;
+    z-index: 3;
+}
+
+.project {
+    transition: 1s;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.3);
+}
+
+.project:hover {
+    transition: 1s;
+    scale: 1.1;
+    box-shadow: none;
+}
+
+.project #content {
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 1px;
+    height: 100%;
+    width: 250px;
+}
